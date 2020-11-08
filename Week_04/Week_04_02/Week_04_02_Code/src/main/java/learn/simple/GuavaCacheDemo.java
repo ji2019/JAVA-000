@@ -15,6 +15,12 @@ import com.google.common.cache.RemovalNotification;
  */
 public class GuavaCacheDemo {
 	
+	/**
+	 * 跨线程数据通信
+	 * @param args
+	 * @throws ExecutionException
+	 * @throws InterruptedException
+	 */
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		// 缓存接口这里是LoadingCache，LoadingCache在缓存项不存在时可以自动加载缓存
 		LoadingCache<Integer, Student> studentCache
