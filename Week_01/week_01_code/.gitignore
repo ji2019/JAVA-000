@@ -1,0 +1,94 @@
+.idea/
+logs/
+target/
+.txlcn/
+
+*.iml
+*.versionsBackup
+
+
+
+
+.project
+.classpath
+.springBeans
+.settings/
+target/
+*.classpath
+*.project
+*.log
+*.psf
+*.class
+classes/
+classes
+
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+
+
+.project
+.classpath
+.springBeans
+.settings
+.settings/
+target/
+*.classpath
+*.log
+*.psf
+*.class
+classes/
+classes
+
+
+*.class
+
+#package file
+*.war
+*.ear
+
+*.iml
+
+#kdiff3 ingnore
+*.orig
+
+#maven ignore
+taget/
+
+#eclipse ignore
+.settings/
+.project
+.classpath
+.factorypath
+
+#idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+# temp file
+*.log
+*.cache
+*.diff
+*.tmp
+
+#system
+.DS_Store
+Thumbs.db
