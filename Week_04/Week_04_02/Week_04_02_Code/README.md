@@ -1,23 +1,30 @@
-**Week02 作业题目（周四）：**
+**Week_04_02 作业题目：**
 
-**1.**使用 GCLogAnalysis.java 自己演练一遍串行 / 并行 /CMS/G1 的案例。
+```
+Week_04_02
+第7节课作业实践
+1、（选做）把示例代码，运行一遍，思考课上相关的问题。也可以做一些比较。
+2、（必做）思考有多少种方式，在main函数启动一个新线程，运行一个方法，拿到这个方法的返回值后，退出主线程？写出你的方法，越多越好，提交到github
 
-**2.**使用压测工具（wrk 或 sb），演练 gateway-server-0.0.1-SNAPSHOT.jar 示例。
+后半场
+1、（选做）列举常用的并发操作API的工具类，简单分析其使用场景和优缺点
+2、（选做）请思考：什么是并发?什么是高并发?实现高并发高可用系统需要考虑哪些因素。对于这些你是怎么理解的?
+3、（选做）请思考 还有哪些跟并发类似、有关的场景的问题。有哪些可以借鉴的解决办法。
+4、（选做）把多线程和并发相关知识带你梳理一遍，画一个脑图，截图上传到github上
 
-**3.（选做）** 如果自己本地有可以运行的项目，可以按照 2 的方式进行演练。
-**4.（必做）** 根据上述自己对于 1 和 2 的演示，写一段对于不同 GC 的总结，提交到 Github。
+可选工具    xmind 百度脑图 wps 	MindManage , 或其他。
+```
 
-**Week02 作业题目（周六）：**
+```
+	public static void main(String[] args) {
+		List<String> lisst = new ArrayList<String>();
+		List<String> ss = new LinkedList<String>();
+		List<String> vv = new Vector<String>();
+		Collections.synchronizedCollection(lisst);
+		//CopyOnWriteArrayList 内的  COWIterator
+		List<String> cowa =  new CopyOnWriteArrayList<String>();
+		// 空间换时间
+		Map<String,Object> maps = new ConcurrentHashMap<String, Object>();
+	}
+```
 
-**1.（选做）**运行课上的例子，以及 Netty 的例子，分析相关现象。
-**2.（必做）**写一段代码，使用 HttpClient 或 OkHttp 访问 [http://localhost:8801 ](http://localhost:8801/)，代码提交到 Github。
-
-以上作业，要求 2 道必做题目提交到 Github 上面，Week02 作业提交地址：
-https://github.com/JAVA-000/JAVA-000/issues/113
-
-请务必按照示例格式进行提交，不要复制其他同学的格式，以免格式错误无法抓取作业。
-作业提交截止时间 10 月 28 日（下周三）23:59 前。
-
-Github 使用教程：[ https://u.geekbang.org/lesson/51?article=294701](https://u.geekbang.org/lesson/51?article=294701)
-
-学号查询方式：PC 端登录 time.geekbang.org, 点击右上角头像进入我的教室，左侧头像下方 G 开头的为学号
