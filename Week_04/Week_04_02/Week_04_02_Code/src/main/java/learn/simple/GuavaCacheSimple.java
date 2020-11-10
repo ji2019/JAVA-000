@@ -13,7 +13,7 @@ import com.google.common.cache.RemovalNotification;
  * https://www.cnblogs.com/kabi/p/8310145.html
  *
  */
-public class GuavaCacheDemo {
+public class GuavaCacheSimple {
 	
 	/**
 	 * 跨线程数据通信
@@ -92,9 +92,12 @@ public class GuavaCacheDemo {
 
 /**
  *
- * 看看到在20此循环中命中次数是17次，未命中3次，这是因为我们设定缓存的过期时间是写入后的8秒，所以20秒内会失效两次，另外第一次获取时缓存中也是没有值的，所以才会未命中3次，其他则命中。
- * guava的内存缓存非常强大，可以设置各种选项，而且很轻量，使用方便。另外还提供了下面一些方法，来方便各种需要： ImmutableMap<K, V>
- * getAllPresent(Iterable<?> keys) 一次获得多个键的缓存值 putAll方法向缓存中添加一个或者多个缓存项
- * invalidateAll方法从缓存中移除缓存项 ConcurrentMap<K, V>快照 refresh(Key)
- * 刷新缓存，即重新取缓存数据，更新缓存
+看看到在20此循环中命中次数是17次，未命中3次，这是因为我们设定缓存的过期时间是写入后的8秒，所以20秒内会失效两次，另外第一次获取时缓存中也是没有值的，所以才会未命中3次，其他则命中。
+guava的内存缓存非常强大，可以设置各种选项，而且很轻量，使用方便。另外还提供了下面一些方法，来方便各种需要：
+ImmutableMap<K, V> getAllPresent(Iterable<?> keys) 一次获得多个键的缓存值
+putAll方法向缓存中添加一个或者多个缓存项
+invalidateAll方法从缓存中移除缓存项
+ConcurrentMap<K, V>快照
+refresh(Key) 刷新缓存，即重新取缓存数据，更新缓存
+ *
  */
