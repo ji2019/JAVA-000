@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "demo.name",
+    "type": "java.lang.String",
+    "description": "姓名"
+  },
+  {
+    "name": "demo.isopen",
+    "type": "java.lang.String",
+    "description": "是否启用demo"
+  }
+]}
