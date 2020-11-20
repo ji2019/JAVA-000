@@ -1,38 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	 <parent>
-           <groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-parent</artifactId>
-    		<version>2.3.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>learn.geekbang.javatrainingcamp.homework</groupId>
+        <artifactId>javatrainingcamp</artifactId>
+        <version>1.0.0</version>
     </parent>
-	<groupId>com.iw2f.learn</groupId>
-	<artifactId>Week_05_01_Code</artifactId>
-	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>Week_05_01_Code</name>
-	<url>http://maven.apache.org</url>
-	<dependencies>
-		<dependency>
-   <groupId>org.projectlombok</groupId>
-   <artifactId>lombok</artifactId>
-</dependency>
+    <artifactId>Week_05_01_Code</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Week_05_01_Code</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-        
-		<!-- junit 5 -->
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-	<build>
-	<resources>
+
+        <!-- junit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <resources>
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
@@ -55,8 +53,8 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-		<plugins>
-			<!-- Need at least 2.22.0 to support JUnit 5 -->
+        <plugins>
+            <!-- Need at least 2.22.0 to support JUnit 5 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -70,6 +68,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 </project>

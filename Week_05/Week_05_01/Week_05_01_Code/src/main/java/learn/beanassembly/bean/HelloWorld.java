@@ -13,7 +13,7 @@ import lombok.ToString;
 @ToString
 @Component
 public class HelloWorld {
-private int age = 18;
-private Date birthday = new Date();
-private String name = "张三";
+    private int age = 18;
+    private Date birthday = new Date();
+    private String name = "张三";
 }

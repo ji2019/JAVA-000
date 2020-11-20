@@ -12,14 +12,14 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class HelloWorld {
-	private int age;
-	private Date birthday;
-	private String name;
+    private int age;
+    private Date birthday;
+    private String name;
 
-	public HelloWorld(int age, Date birthday, String name) {
-		super();
-		this.age = age;
-		this.birthday = birthday;
-		this.name = name;
-	}
+    public HelloWorld(int age, Date birthday, String name) {
+        super();
+        this.age = age;
+        this.birthday = birthday;
+        this.name = name;
+    }
 }

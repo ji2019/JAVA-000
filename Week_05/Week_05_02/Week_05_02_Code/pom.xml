@@ -3,12 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>learn.geekbang.javatrainingcamp.homework</groupId>
+		<artifactId>javatrainingcamp</artifactId>
+		<version>1.0.0</version>
 	</parent>
-	<groupId>com.iw2f.learn</groupId>
 	<artifactId>Week_05_02_Code</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
@@ -27,7 +25,7 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>com.iw2f.learn</groupId>
+			<groupId>learn.geekbang.javatrainingcamp.homework</groupId>
 			<artifactId>demo-spring-boot-starter</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
@@ -57,7 +55,6 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
-					<uriEncoding>UTF-8</uriEncoding>
 				</configuration>
 			</plugin>
 		</plugins>
