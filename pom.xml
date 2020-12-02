@@ -323,9 +323,7 @@
     <modules>
         <module>Week_01</module>
         <module>Week_02</module>
-        <module>Week_03</module>
-		<module>Week_04</module>
 		<module>Week_05</module>
-		<module>Week_06</module>
+		<module>Week_07</module>
     </modules>
 </project>
